@@ -3,31 +3,34 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
 }
 
 :root {
-   --Green: hsl(75, 94%, 57%);
-   --White: hsl(0, 0%, 100%);
-   --Grey700: hsl(0, 0%, 20%);
-   --Grey800: hsl(0, 0%, 12%);
-   --Grey900: hsl(0, 0%, 8%);
+   --brown: #8a3d00;
+   --yellowwaffle: #b89157;
+   --yellow: #f5c200;
+   --offwhite: #F4F0DB;
+   --bluegreen: #688781;
+   --shadow: rgba(0, 0, 0, 0.25);
 }
 
 @font-face {
-    font-family: 'Inter';
+    font-family: 'Inter-Regular';
     src: url('./assets/fonts/static/Inter-Regular.ttf');
+    font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('./assets/fonts/static/Inter-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'Inter';
+    font-family: 'Inter-SemiBold';
     src: url('./assets/fonts/static/Inter-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('./assets/fonts/static/Inter-Bold.ttf');
+    font-weight: 700;
 }
 
 html, body {
@@ -35,7 +38,7 @@ html, body {
 }
 
 body {
-    background-color: var(--Grey900);
+    background-color: var(--yellowwaffle);
 }
 
 main {
@@ -46,12 +49,13 @@ main {
 }
 
 section {
-    background-color: var(--Grey800);
+    background-color: var(--offwhite);
     width: 100%;
     max-width: 320px;
     border-radius: 16px;
     padding: 24px;
     text-align: center;
+    box-shadow: 0px 4px 4px var(--shadow);
 }
 
 img {
@@ -60,19 +64,29 @@ img {
 }
 
 h1 {
-    color: var(--White);
-    margin-top: 28px;
+    font-family: 'Inter-Bold', sans-serif;
     font-size: 24px;
+    color: var(--brown);
+    margin-top: 16px;
 }
 
 h2 {
-    color: var(--Green);
+    font-family: 'Inter-SemiBold', sans-serif;
+    font-size: 18px;
+    color: var(--bluegreen);
+    margin-top: 28px;
+}
+
+h3 {
+    font-family: 'Inter-Regular', sans-serif;
     font-size: 14px;
+    color: var(--bluegreen);
     margin-top: 10px;
 }
 
 p {
-    color: grey;
+    font-family: 'Inter-Regular', sans-serif;
+    color: var(--shadow);
     font-size: 14px;
     font-weight: 400;
     margin-top: 28px;
@@ -92,8 +106,10 @@ li:last-child{
 }
 
 a {
-    background-color: var(--Grey700);
-    color: var(--White);
+    font-family: 'Inter-SemiBold', sans-serif;
+    font-size: 14px;
+    background-color: var(--brown);
+    color: var(--offwhite);
     font-weight: 600;
     display: inline-block;
     width: 100%;
@@ -102,6 +118,7 @@ a {
 }
 
 a:hover {
-    background-color: var(--Green);
-    color: var(--Grey900);
+    background-color: var(--bluegreen);
+    color: var(--yellow);
+    box-shadow: 0px 4px 4px var(--shadow);
 }
