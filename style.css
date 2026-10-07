@@ -12,7 +12,7 @@
    --yellow: #f5c200;
    --offwhite: #F4F0DB;
    --bluegreen: #688781;
-   --shadow: rgba(0, 0, 0, 0.25);
+   --shadow: rgba(0, 0, 0, 0.7);
 }
 
 @font-face {
@@ -68,6 +68,18 @@ h1 {
     font-size: 24px;
     color: var(--brown);
     margin-top: 16px;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.pin {
+    height: 20px;
+    width: 20px;
+    margin-top: 26px;
 }
 
 h2 {
